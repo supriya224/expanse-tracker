@@ -1,7 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
+import expanseReducer from './feature/expanceSlice'
 
 export const store= configureStore({
-    reducer:{},
+    reducer:{
+        expanse:expanseReducer
+    },
 })
 
 export type RootState=ReturnType<typeof store.getState>

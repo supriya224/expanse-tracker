@@ -1,10 +1,8 @@
 import { Home } from "./pages"
 
 function App() {
-
-
   return (
-    <div className="text-3xl">
+    <div className=" m-96">
     <Home/>
     </div>
   )
