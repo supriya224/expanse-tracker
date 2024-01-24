@@ -26,7 +26,7 @@ export const expanseSlice = createSlice({
   name: "expanse",
   initialState,
   reducers: {
-    addExpanseHistory: (state, action: PayloadAction<IExpanse>) => {
+    addExpanseToHistory: (state, action: PayloadAction<IExpanse>) => {
       if (typeof action.payload.amount !== "number") {
         state.expanseHistory.push({
           expanseName: action.payload.expanseName,
@@ -62,7 +62,7 @@ export const {
   calculateBalance,
   calculateIncome,
   calculateExpanse,
-  addExpanseHistory
+  addExpanseToHistory
 }=expanseSlice.actions
 
 export default expanseSlice.reducer

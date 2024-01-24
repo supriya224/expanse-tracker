@@ -1,10 +1,10 @@
-import React from 'react'
+
 import { useAppSelector } from '../../hooks/Hooks'
 
 const Balance = () => {
   const balance= useAppSelector((state)=>state.expanse.balance)
   return (
-    <div>your balance:<span>${balance}</span></div>
+    <div className=' font-bold'>your balance:<span className='text-gray-500'>${balance}</span></div>
   )
 }
 

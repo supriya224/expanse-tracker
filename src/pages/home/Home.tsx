@@ -4,7 +4,7 @@ import { Balance, ExpanseHistory, IncompleteExpanse, Transaction } from "../../c
 
 const Home = () => {
   return (
-    <div className="container flex flex-col shadow-lg shadow-black text-center bg-purple-200">
+    <div className=" container w-[30rem] h-[20rem] flex flex-col shadow-lg shadow-black text-center p-9  bg-purple-200">
       <Balance/>
       <IncompleteExpanse/>
       <ExpanseHistory/>

@@ -2,9 +2,12 @@ import { Home } from "./pages"
 
 function App() {
   return (
-    <div className=" m-96">
+    <>
+   
+    <div className="w-full container m-[10rem] ml-[30rem]">
     <Home/>
     </div>
+    </>
   )
 }
 
